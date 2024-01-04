@@ -53,7 +53,6 @@
                 //user_id 是自動遞增的，不需設值
                 $sql="INSERT INTO user_data (user_id, user_name, user_password)
                     VALUES(NULL,'".$username."','".$password."')";
-                
                 if(mysqli_query($conn, $sql)){
                     echo "<br><br> 註冊成功!3秒後將自動跳轉頁面<br>";
                     //可手動跳轉
