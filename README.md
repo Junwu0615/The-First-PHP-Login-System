@@ -1,5 +1,5 @@
 <a href='https://github.com/Junwu0615/The-First-PHP-Login-System'><img alt='GitHub Views' src='https://views.whatilearened.today/views/github/Junwu0615/The-First-PHP-Login-System.svg'> 
-<a href='https://github.com/Junwu0615/The-First-PHP-Login-System'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Junwu0615/ab14c4824b25cc2eb94c56e63b133e32/raw/The-First-PHP-Login-System_clone.json&logo=github'> </br>
+<a href='https://github.com/Junwu0615/The-First-PHP-Login-System'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count_total&url=https://gist.githubusercontent.com/Junwu0615/ab14c4824b25cc2eb94c56e63b133e32/raw/The-First-PHP-Login-System_clone.json&logo=github'> </br>
 [![](https://img.shields.io/badge/Language-PHP-blue.svg?style=plastic)](https://www.php.net/)
 [![](https://img.shields.io/badge/Language-MySQL-blue.svg?style=plastic)](https://www.mysql.com/) 
 [![](https://img.shields.io/badge/Project-LoginSystem-blue.svg?style=plastic)](https://github.com/Junwu0615/The-First-PHP-Login-System)
@@ -74,7 +74,7 @@
 </br>
 
 - `config.php` : 寫 DB 訊息的地方，並確認是否連接上。
-  ```
+  ```php
   define('DB_SERVER', 'localhost');//本地
   define('DB_USERNAME', 'your SQL account'); //SQL 帳號
   define('DB_PASSWORD', 'your SQL password'); //SQL 密碼
@@ -99,13 +99,13 @@
   - 用 `if($_SERVER["REQUEST_METHOD"]=="POST")` 收到登入資訊後，由後端去 DB 判斷是否有該資料。若有，即審核通過，並導至 `welcome.php` 頁面；若無，則跳出錯誤視窗。
   - 一些功能 :
     - 一般的密碼比對
-      ```
+      ```php
       //從 DB 撈出該使用者的密碼 $row["user_password"]
       //前端 summit 來的密碼 $password
       if(mysqli_num_rows($result)==1 && $password==$row["user_password"])
       ```
     - [加入哈希的密碼比對](https://tools.wingzero.tw/article/sn/324)，不確定用法對不對 (在想是否在前端就要做完加密動作才傳來後端?)
-      ```
+      ```php
       //對前端 summit 來的密碼進行哈希加密處理
       $password_hash=password_hash($password,PASSWORD_DEFAULT);
       //透過 password_verify 此方法可以比對經由哈希處理過後的密碼，若是一致，會回傳True，反之False
