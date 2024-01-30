@@ -7,7 +7,6 @@
         <title> 會員註冊 </title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <link href="css/web.css" rel="stylesheet">
-
         <script>
             function validateForm() {
                 var x = document.forms["registerForm"]["password"].value;
@@ -25,7 +24,6 @@
     </head>
     <body>
         <h1>會員註冊</h1>
-
         <form name="registerForm" method="post" action="register.php" onsubmit="return validateForm()">
             帳  號：
             <input type="text" name="username"><br/><br/>
@@ -37,12 +35,10 @@
             <input type="reset" value="重設" name="submit">
             <input type ="button" onclick="location.href='index.php'" value="上一頁"></input>
         </form>
-
         <?php 
         $conn=require_once("config.php");
         //可將變數儲存在session / 一個檔案只須寫一次 / 激活session的意思
         session_start(); 
-
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             //接收 Post 訊息: 使用者名稱/密碼，儲存為變數 $username / $password
             $username=$_POST["username"];

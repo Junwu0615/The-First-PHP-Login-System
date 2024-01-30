@@ -1,6 +1,5 @@
 <?php
 //config.php是與資料庫有關的設定檔
-
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 /* define() 函數定義一個常量。
@@ -18,7 +17,6 @@ define('DB_NAME', 'your DB name'); //DB 的名字
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 // 輸入中文也 OK 的編碼
 mysqli_query($link, 'SET NAMES utf8');
-
 // 檢查 DB 連接
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());

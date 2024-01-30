@@ -1,11 +1,9 @@
 <?php
 ////login.php負責處理登入的操作
-
 //config.php 是 DB 設定檔
 $conn=require_once "config.php";
 //可將變數儲存在session / 一個檔案只須寫一次 / 激活session的意思
 session_start(); 
-
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     //接收Post訊息: 使用者名稱/密碼，儲存為變數$username/$password
     $username=$_POST["username"];
@@ -35,10 +33,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         message_alert("帳號或密碼錯誤 (Invalid Password)"); 
     }
 }
-
 //關閉 DB 連接
 mysqli_close($link);
-
 //當密碼輸入"錯誤"傳回跳出視窗，並回首頁
 function message_alert($message) {
     //導回 index.php
