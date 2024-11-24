@@ -52,7 +52,7 @@
     - `user_id` | `int` | `AUTO_INCREMENT` (打勾 AI 選項)
     - `user_name` | `text`
     - `user_password` | `text`
-    - <img src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/DB.jpg"/>
+    - <img src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/DB.jpg"/>
 
 ### E.　檔案說明
 
@@ -138,23 +138,23 @@
 
 今天我是新用戶，想設定的名稱: `Ping_Chun` | 密碼: `2024_1_4` 。
 - I.　登入頁面-進行登入 : index.php 。
-  - <img height=185 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/00.jpg"/>
-  - <img height=139 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/01.jpg"/>
+  - <img height=185 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/00.jpg"/>
+  - <img height=139 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/01.jpg"/>
   - 理所當然會顯示報錯。
 - II.　註冊頁面-註冊新帳號 : register.php 。
-  - <img height=334 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/02.jpg"/>
-  - <img height=320 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/03.jpg"/>
+  - <img height=334 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/02.jpg"/>
+  - <img height=320 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/03.jpg"/>
   - 可看到 `無人註冊，並顯示已註冊成功` 。
 - III.　查看 DB 是否已有該帳戶。
-  - <img height=108 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/04.jpg"/>
+  - <img height=108 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/04.jpg"/>
   - 確認已新增， `user_id = 20` 的新用戶。
 - Ⅳ.　再次用同一支帳號註冊。
-  - <img height=340 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/05.jpg"/>
+  - <img height=340 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/05.jpg"/>
   - 系統 `跳出已有人註冊` 。
 - V.　再次進行登入動作。
-  - <img height=141 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/06.jpg"/>
+  - <img height=141 width=450 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/06.jpg"/>
   - 進入歡迎頁面 : welcome.php !
-  - <img height=484 width=816 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/sample_img/07.jpg"/>
+  - <img height=484 width=816 src="https://github.com/Junwu0615/The-First-PHP-Login-System/blob/main/Sample/07.jpg"/>
   - 右上角可以看到 User ID + Name，以及登出鈕。
   - 登出即導回 `登入頁面` 。
 
